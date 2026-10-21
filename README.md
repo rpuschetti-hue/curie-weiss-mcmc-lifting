@@ -5,7 +5,7 @@ This repository contains the MATLAB numerical implementation developed for my Ma
 ## 📌 Overview & Mathematical Background
 Standard reversible Markov Chain Monte Carlo (MCMC) algorithms, such as the classic Metropolis-Hastings (MH), suffer from severe critical slowing down near phase transitions due to their diffusive nature.
 
-By applying **State-Space Lifting** (following the framework of *Turitsyn, Chertkov, Vucelja* and the scaling limits of *Bierkens & Roberts*), the state space $\Omega$ is doubled into $\Omega \times \{+1, -1\}$ to introduce directional persistence and break detailed balance. 
+By applying **State-Space Lifting** (following the framework of *Turitsyn, Chertkov, Vucelja* and the scaling limits of *Bierkens & Roberts*), the state space $\Omega$ is doubled into $\Omega \times {+1, -1}$ to introduce directional persistence and break detailed balance. 
 
 At the critical inverse temperature ($\beta = 1$), this non-reversible dynamics achieves a quadratic-like speedup in the relaxation time $\tau$:
 * **Reversible Metropolis-Hastings:** $\tau \sim \Theta(N^{3/2})$ (Diffusive Langevin limit)
